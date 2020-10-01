@@ -5,7 +5,7 @@ class Config:
     '''
     General configuration parent class
     '''
-    pass
+    
 
     # API_BASE_URL='https://pixabay.com/sk/images/search/'
 

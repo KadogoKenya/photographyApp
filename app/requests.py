@@ -1,6 +1,6 @@
 from app import app
 import urllib.request,json
-from .models import Image
+# from .models import Image
 
 
 
@@ -11,7 +11,7 @@ base_url = app.config["API_BASE_URL"]
 # image_results=[]
 
 
-def search_images(name):
+def search_images(image_name):
     search_image_url = 'https://pixabay.com/api/?key={}&q={}&image_type=photo').format(api_key,name)
     
 
@@ -25,4 +25,4 @@ def search_images(name):
             image_list = search_image_response['results']
             image_results = process_results(image_list)
 
-    return image_results
+    return search_image_results
