@@ -4,6 +4,7 @@ class Config:
     '''
     pass
 
+    API_BASE_URL='https://pixabay.com/sk/images/search/'
 
 
 class ProdConfig(Config):
