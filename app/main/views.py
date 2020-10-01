@@ -1,7 +1,7 @@
 from flask import render_template
 from app import app
 
-# from .request import search_image
+
 
 
 @app.route('/')

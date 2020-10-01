@@ -10,8 +10,8 @@ def get_images()
     
 
 
-def search_images(image_name):
-    search_image_url = 'https://pixabay.com/api/?key=18531787-5c6ee5dae7633b2233166ec84&q=?&image_type=photo'.format(api_key,image_name)
+def search_images(photo_type):
+    search_image_url = 'https://pixabay.com/api/?key={}&q={}&image_type=photo').format(api_key,photo_type)
     
 
     with urllib.request.urlopen(search_image_url) as url:
