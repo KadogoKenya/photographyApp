@@ -1,13 +1,14 @@
 from app import app
 import urllib.request,json
+from .models import Image
 
 
 
 api_key = app.config['API_KEY']
 base_url = app.config["API_BASE_URL"]
 
-def get_images()
     
+# image_results=[]
 
 
 def search_images(photo_type):
@@ -21,7 +22,7 @@ def search_images(photo_type):
         search_image_results = None
 
         if search_image_response['results']:
-            search_image_list = search_image_response['results']
-            search_image_results = process_results(search_image_list)
+            image_list = search_image_response['results']
+            image_results = process_results(image_list)
 
-    return search_image_results
+    return image_results
